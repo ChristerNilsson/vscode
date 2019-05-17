@@ -18,6 +18,7 @@ assert "b", substring "abc","def", 1, 2
 assert "c", substring "abc","def", 2, 3
 assert "d", substring "abc","def", 3, 4
 assert "e", substring "abc","def", 4, 5
+assert "f", substring "abc","def", 5, 6
 assert "abc", substring "abc","def", 0, 3
 assert "cde", substring "abc","def", 2, 5
 assert "abcdef", substring "abc","def", 0, 6
