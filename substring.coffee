@@ -1,8 +1,9 @@
-assert = (a,b) -> if a != b
-	print "#{a} != #{b}"
-	throw 'assert failure!'
+assert = (a,b) -> 
+	if a != b
+		print "#{a} != #{b}"
+		throw 'assert failure!'
 
-print = console.log 
+print = console.log
 
 substring = (left, right, start, stop) -> 
 	left_start = start
@@ -29,4 +30,3 @@ assert "cd", substring "abc","def", 2, 4
 assert "abc", substring "abc","def", 0, 3
 assert "cde", substring "abc","def", 2, 5
 assert "abcdef", substring "abc","def", 0, 6
-
