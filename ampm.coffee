@@ -5,18 +5,26 @@ assert = (a,b) ->
 
 print = console.log 
 
+HH = 
+	'00':'12'
+	'13':'01'
+	'14':'02'
+	'15':'03'
+	'16':'04'
+	'17':'05'
+	'18':'06'
+	'19':'07'
+	'20':'08'
+	'21':'09'
+	'22':'10'
+	'23':'11'
+
 f = (hhmm) ->
-	arr = hhmm.split ':'
-	hh = parseInt arr[0]
-	mm = parseInt arr[1]
-	minutes = 60*hh+mm
-	h = hh % 12
-	m = mm
-	if h==0 then h=12
-	if h<10 then sh = '0'+h else sh = h
-	if m<10 then sm = '0'+m else sm = m
-	ampm = if minutes < 12*60 then 'am' else 'pm'
-	"#{sh}:#{sm} #{ampm}"
+	hh = hhmm.slice 0,2
+	mm = hhmm.slice 3,5
+	ampm = if hhmm < '12:00' then 'am' else 'pm'
+	sh = if hh of HH then HH[hh] else hh
+	"#{sh}:#{mm} #{ampm}"
 
 assert '12:00 am', f '00:00'
 assert '12:01 am', f '00:01'
