@@ -38,4 +38,5 @@ assert '12:01 pm', f '12:01'
 assert '12:59 pm', f '12:59'
 assert '01:00 pm', f '13:00'
 assert '11:59 pm', f '23:59'
+
 print 'Ready!'
