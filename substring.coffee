@@ -1,7 +1,7 @@
 assert = (a,b) -> if a != b
     print "#{a} != #{b}"
     throw 'assert failure!'
-    
+
 print = console.log 
 
 substring = (left, right, start, stop) -> 
@@ -18,7 +18,7 @@ assert "abcdef", substring "abc","def", 0, 6
 assert "a", substring "abc","def", 0, 1
 assert "abc", substring "abc","def", 0, 3
 assert "c", substring "abc","def", 2, 3
-#assert not ("d" == substring "abc","def", 3, 4)
+assert "d", substring "abc","def", 3, 4
 
 # "abc", "def", 2,5 -> "cde"   
  
