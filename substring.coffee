@@ -1,4 +1,4 @@
-assert = (flag) -> if not flag then raise 'assert error!'
+assert = (flag) -> if not flag then throw new Error 'assert error!'
 print = console.log 
 
 assert true 
