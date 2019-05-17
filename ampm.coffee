@@ -1,9 +1,9 @@
 assert = (a,b) -> 
-	if a != b
-		print 'assert failure:'
-		print a
-		print b
-		throw 'assert failure!'
+	if a == b then return
+	print 'assert failure:'
+	print a
+	print b
+	throw 'assert failure!'
 
 print = console.log 
 
