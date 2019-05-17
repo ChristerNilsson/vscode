@@ -1,4 +1,6 @@
 assert = (flag) -> if not flag then throw 'assert error!'
 print = console.log 
 
-assert true 
+substring = (left, right, start, stop) ->
+
+# "abc", "def", 2,5 -> "cde"
