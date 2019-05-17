@@ -1,6 +1,6 @@
 # assert = (flag) -> if not flag then throw 'assert error!'
 print = console.log 
-print 'ok' 
+print 'Hurra!' 
 # f = (a,b) -> a+b  
 # #a = 11/0 
 # print a

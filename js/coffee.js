@@ -4,7 +4,7 @@ var print;
 
 print = console.log;
 
-print('ok');
+print('Hurra!');
 
 
 // f = (a,b) -> a+b  
@@ -13,5 +13,5 @@ print('ok');
 // assert 3 == f 1,2 
 // assert 33 == f 11,22
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29mZmVlLmpzIiwic291cmNlUm9vdCI6Ii4uIiwic291cmNlcyI6WyJjb2ZmZWUuY29mZmVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTtBQUFBLElBQUE7O0FBQ0EsS0FBQSxHQUFRLE9BQU8sQ0FBQzs7QUFDaEIsS0FBQSxDQUFNLElBQU47O0FBRkEiLCJzb3VyY2VzQ29udGVudCI6WyIjIGFzc2VydCA9IChmbGFnKSAtPiBpZiBub3QgZmxhZyB0aGVuIHRocm93ICdhc3NlcnQgZXJyb3IhJ1xyXG5wcmludCA9IGNvbnNvbGUubG9nIFxyXG5wcmludCAnb2snIFxyXG4jIGYgPSAoYSxiKSAtPiBhK2IgIFxyXG4jICNhID0gMTEvMCBcclxuIyBwcmludCBhXHJcbiMgYXNzZXJ0IDMgPT0gZiAxLDIgXHJcbiMgYXNzZXJ0IDMzID09IGYgMTEsMjJcclxuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29mZmVlLmpzIiwic291cmNlUm9vdCI6Ii4uIiwic291cmNlcyI6WyJjb2ZmZWUuY29mZmVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTtBQUFBLElBQUE7O0FBQ0EsS0FBQSxHQUFRLE9BQU8sQ0FBQzs7QUFDaEIsS0FBQSxDQUFNLFFBQU47O0FBRkEiLCJzb3VyY2VzQ29udGVudCI6WyIjIGFzc2VydCA9IChmbGFnKSAtPiBpZiBub3QgZmxhZyB0aGVuIHRocm93ICdhc3NlcnQgZXJyb3IhJ1xyXG5wcmludCA9IGNvbnNvbGUubG9nIFxyXG5wcmludCAnSHVycmEhJyBcclxuIyBmID0gKGEsYikgLT4gYStiICBcclxuIyAjYSA9IDExLzAgXHJcbiMgcHJpbnQgYVxyXG4jIGFzc2VydCAzID09IGYgMSwyIFxyXG4jIGFzc2VydCAzMyA9PSBmIDExLDIyXHJcbiJdfQ==
 //# sourceURL=c:\github\vscode\coffee.coffee
