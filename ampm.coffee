@@ -1,6 +1,8 @@
 assert = (a,b) -> 
 	if a != b
-		print "#{a} != #{b}"
+		print 'assert failure:'
+		print a
+		print b
 		throw 'assert failure!'
 
 print = console.log 
