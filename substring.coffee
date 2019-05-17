@@ -8,7 +8,8 @@ substring = (left, right, start, stop) ->
         left_start = start
         left_stop = stop
         left_sub = left.slice left_start,left_stop
-        left_sub + ""
+        right_sub = ""
+        left_sub + right_sub
 
 assert "abcdef" == substring "abc","def", 0, 6
 assert "a" == substring "abc","def", 0, 1
