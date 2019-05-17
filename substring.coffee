@@ -13,6 +13,7 @@ substring = (left, right, start, stop) ->
     right_sub = if stop <= left.length then "" else right.slice right_start,right_stop
     left_sub + right_sub
 
+assert "", substring "abc","def", 0, 0
 assert "a", substring "abc","def", 0, 1
 assert "b", substring "abc","def", 1, 2
 assert "c", substring "abc","def", 2, 3
