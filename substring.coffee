@@ -6,7 +6,8 @@ substring = (left, right, start, stop) ->
         left+right
     else
         left_start = 0
-        left.slice left_start,1
+        left_stop = 1
+        left.slice left_start,left_stop
 
 assert "abcdef" == substring "abc","def", 0, 6
 assert "a" == substring "abc","def", 0, 1
