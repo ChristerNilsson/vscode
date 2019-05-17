@@ -21,10 +21,10 @@ HH =
 	'22':'10'
 	'23':'11' 
 
-f = (hhmm) ->
-	hh = hhmm.slice 0,2
-	mm = hhmm.slice 3,5
-	ampm = if hhmm < '12:00' then 'am' else 'pm'
+f = (hhxmm) ->
+	hh = hhxmm.slice 0,2
+	mm = hhxmm.slice 3,5
+	ampm = if hhxmm < '12:00' then 'am' else 'pm'
 	if hh of HH then hh = HH[hh]
 	hh + ':' + mm + ' ' + ampm 
 
