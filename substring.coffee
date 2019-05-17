@@ -7,10 +7,10 @@ print = console.log
 substring = (left, right, start, stop) -> 
     left_start = start
     left_stop = Math.min stop,left.length
-    left_sub = if start>left.length then "" else left.slice left_start,left_stop
-    right_start = Math.max 0,start-left.length
+    left_sub = if start > left.length then "" else left.slice left_start,left_stop
+    right_start = Math.max 0,start - left.length
     right_stop = stop - left.length
-    right_sub = if stop<=left.length then "" else right.slice right_start,right_stop
+    right_sub = if stop <= left.length then "" else right.slice right_start,right_stop
     left_sub + right_sub
 
 assert "abcdef", substring "abc","def", 0, 6
@@ -21,5 +21,4 @@ assert "d", substring "abc","def", 3, 4
 assert "e", substring "abc","def", 4, 5
 assert "cde", substring "abc","def", 2, 5
 
-# "abc", "def", 2,5 -> "cde"   
  
