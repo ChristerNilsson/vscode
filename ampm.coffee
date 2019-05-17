@@ -26,7 +26,7 @@ f = (hhmm) ->
 	if hh of HH then hh=HH[hh]
 	hh+':'+mm+' '+ampm
 
-assert '12:00 am', f '00:00'
+assert '12:00 am', f '00:00' 
 assert '12:01 am', f '00:01'
 assert '12:59 am', f '00:59'
 assert '01:00 am', f '01:00'
