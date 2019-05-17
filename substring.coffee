@@ -14,6 +14,11 @@ substring = (left, right, start, stop) ->
     left_sub + right_sub
 
 assert "", substring "abc","def", 0, 0
+assert "", substring "abc","def", 1, 1
+assert "", substring "abc","def", 2, 2
+assert "", substring "abc","def", 3, 3
+assert "", substring "abc","def", 4, 4
+assert "", substring "abc","def", 5, 5
 assert "a", substring "abc","def", 0, 1
 assert "b", substring "abc","def", 1, 2
 assert "c", substring "abc","def", 2, 3
