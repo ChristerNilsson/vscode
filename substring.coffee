@@ -5,16 +5,16 @@ assert = (a,b) -> if a != b
 print = console.log 
 
 substring = (left, right, start, stop) -> 
-    if start == 0 and stop == left.length + right.length
-        left+right
-    else
-        left_start = start
-        left_stop = Math.min stop,left.length
-        left_sub = if start>left.length then "" else left.slice left_start,left_stop
-        right_start = Math.max 0,start-left.length
-        right_stop = stop - left.length
-        right_sub = if stop<=left.length then "" else right.slice right_start,right_stop
-        left_sub + right_sub
+    # if start == 0 and stop == left.length + right.length
+    #     left+right
+    # else
+    left_start = start
+    left_stop = Math.min stop,left.length
+    left_sub = if start>left.length then "" else left.slice left_start,left_stop
+    right_start = Math.max 0,start-left.length
+    right_stop = stop - left.length
+    right_sub = if stop<=left.length then "" else right.slice right_start,right_stop
+    left_sub + right_sub
 
 assert "abcdef", substring "abc","def", 0, 6
 assert "a", substring "abc","def", 0, 1
