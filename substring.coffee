@@ -1,4 +1,7 @@
-assert = (a,b) -> if a != b then throw "#{a} != #{b}"
+assert = (a,b) -> if a != b
+    print "#{a} != #{b}"
+    throw 'assert failure!'
+    
 print = console.log 
 
 substring = (left, right, start, stop) -> 
