@@ -10,9 +10,11 @@ f = (hhmm) ->
 	hh = parseInt arr[0]
 	mm = parseInt arr[1]
 	minutes = 60*hh+mm
-	h = minutes//60 % 12
+	h = hh
+	m = mm
 	if h==0 then h=12
 	if h<10 then sh = '0'+h else sh = h
+	if m<10 then sm = '0'+m else sm = m
 	ampm = if minutes < 12*60 then 'am' else 'pm'
 	"#{sh}:#{mm} #{ampm}"
 
