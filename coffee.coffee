@@ -2,7 +2,7 @@ assert = (flag) -> if not flag then throw 'assert error!'
 print = console.log 
 
 f = (a,b) -> a+b  
-a = 11/0 
+#a = 11/0 
 print a
 assert 3 == f 1,2 
 assert 33 == f 11,22
