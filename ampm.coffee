@@ -16,7 +16,7 @@ f = (hhmm) ->
 	if h<10 then sh = '0'+h else sh = h
 	if m<10 then sm = '0'+m else sm = m
 	ampm = if minutes < 12*60 then 'am' else 'pm'
-	"#{sh}:#{mm} #{ampm}"
+	"#{sh}:#{sm} #{ampm}"
 
 #assert '12:00 am', f '00:00'
 # assert '12:01 am', f '00:01'
