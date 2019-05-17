@@ -7,11 +7,16 @@ print = console.log
 
 f = (hhmm) ->
 	arr = hhmm.split ':'
-	h = parseInt arr[0]
-	m = parseInt arr[1]
-	'12:00 am'
-	
-assert '12:00 am', f '00:00'
+	hh = parseInt arr[0]
+	mm = parseInt arr[1]
+	minutes = 60*hh+mm
+	h = minutes//60 % 12
+	if h==0 then h=12
+	if h<10 then sh = '0'+h else sh = h
+	ampm = if minutes < 12*60 then 'am' else 'pm'
+	"#{sh}:#{mm} #{ampm}"
+
+#assert '12:00 am', f '00:00'
 # assert '12:01 am', f '00:01'
 # assert '12:59 am', f '00:59'
 # assert '01:00 am', f '01:00'
