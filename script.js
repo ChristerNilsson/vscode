@@ -5,3 +5,4 @@ f = (a,b) => a+b
 a = 11/0 
 print(a)
 assert(f(1,2) == 3)
+assert(f(11,22) == 33)
