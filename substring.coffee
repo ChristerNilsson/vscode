@@ -7,7 +7,7 @@ substring = (left, right, start, stop) ->
     else
         left_start = start
         left_stop = stop
-        left_sub = left.slice left_start,left_stop
+        left_sub = if start>left.length then "" else left.slice left_start,left_stop
         right_sub = ""
         left_sub + right_sub
 
