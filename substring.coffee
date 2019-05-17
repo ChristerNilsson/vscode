@@ -5,7 +5,8 @@ substring = (left, right, start, stop) ->
     if start == 0 and stop == left.length + right.length
         left+right
     else
-        left.slice 0,1
+        left_start = 0
+        left.slice left_start,1
 
 assert "abcdef" == substring "abc","def", 0, 6
 assert "a" == substring "abc","def", 0, 1
