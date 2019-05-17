@@ -25,7 +25,7 @@ f = (hhmm) ->
 	hh = hhmm.slice 0,2
 	mm = hhmm.slice 3,5
 	ampm = if hhmm < '12:00' then 'am' else 'pm'
-	if hh of HH then hh=HH[hh]
+	if hh of HH then hh = HH[hh]
 	hh+':'+mm+' '+ampm 
 
 assert '12:00 am', f '00:00' 
